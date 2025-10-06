@@ -1,1 +1,1 @@
-# This is the Rihanna boutique website created using html,css,js adnBootstrap
+# This is the Rihanna boutique website created using html,css,js and Bootstrap
