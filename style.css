@@ -289,9 +289,10 @@
 
 .slider-text{
     position: relative;
-    top: 100px;
+    top: 40px;
     left: 100px;
     text-align: center;
+    color: #fff;
 }
 
 .slider-text h2{
@@ -313,8 +314,8 @@
     border-radius: 25px;
     opacity: .8;
     position: relative;
-    left:870px;
-    bottom: 80px;
+    left:975px;
+    bottom: 140px;
 }
 
 .slider button a{
