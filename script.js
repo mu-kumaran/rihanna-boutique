@@ -81,3 +81,45 @@ function slider_init(){
 }
 
 slider_init();
+
+// Carousel section
+
+const slides = document.querySelector('.c-slides');
+const slideImages = document.querySelectorAll('.c-slide');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+
+let index = 0;
+
+// Show current slide
+function showSlide() {
+  slides.style.transform = `translateX(${-index * 100}%)`;
+}
+
+// Next button
+next.addEventListener('click', () => {
+  index = (index + 1) % slideImages.length;
+  showSlide();
+});
+
+// Prev button
+prev.addEventListener('click', () => {
+  index = (index - 1 + slideImages.length) % slideImages.length;
+  showSlide();
+});
+
+// Auto slide
+let autoSlide = setInterval(() => {
+  index = (index + 1) % slideImages.length;
+  showSlide();
+}, 3000);
+
+// Pause on hover
+document.querySelector('.c-slider').addEventListener('mouseenter', () => clearInterval(autoSlide));
+document.querySelector('.c-slider').addEventListener('mouseleave', () => {
+  autoSlide = setInterval(() => {
+    index = (index + 1) % slideImages.length;
+    showSlide();
+  }, 3000);
+});
+
