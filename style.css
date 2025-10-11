@@ -330,7 +330,7 @@
 }
 
 
-/* Carousel section */
+/* Another slider section */
 
 .c-slider {
   position: relative;
@@ -340,6 +340,7 @@
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 25px;
 }
 
 .c-slides {
@@ -376,4 +377,116 @@
 .left { left: 10px; }
 .right { right: 10px; }
 
+/* carousel */
+.carousel-section {
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
 
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease;
+  gap: 30px;
+}
+
+
+.carousel-image {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+
+.carousel-image:hover {
+  transform: scale(1.03);
+}
+
+
+/* Controls below */
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+
+.arrow-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #c9a48a;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+.arrow-btn:hover {
+  background: #b08668;
+}
+
+
+.progress-bar {
+  flex: 1;
+  height: 2px;
+  background: #ccc;
+  position: relative;
+}
+
+
+.progress {
+  height: 2px;
+  background: #c9a48a;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+
+/* Lightbox styles */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+  z-index: 999;
+}
+
+
+.lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Fade in animation for lightbox image */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
