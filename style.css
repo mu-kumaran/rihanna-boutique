@@ -378,6 +378,10 @@
 .right { right: 10px; }
 
 /* carousel */
+.carousel-container{
+    overflow-x: hidden;
+}
+
 .carousel-section {
   width: 80%;
   max-width: 1000px;
@@ -490,3 +494,109 @@
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
 }
+
+/* Services section */
+
+.service{
+    position: relative;
+    margin-top: 50px;
+}
+
+.div-service-1{
+    text-align: center;
+}
+
+.div-service-1 p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #a27d6a;
+}
+
+.div-service-1 h2{
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.div-service-1 img{
+    margin-top: 25px;
+}
+
+.div-service-2 .row{
+    margin-top: 100px !important;
+}
+
+.card-1-icon{
+    position: absolute;
+    background: url("./images/icon-1.png") no-repeat;
+    width: 150px;
+    height: 270px;
+    bottom: 5px;
+    right: 0;
+}
+
+.card-1{
+    position: relative;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px 45px 35px;
+    border: 10px solid white;
+    outline: 1px solid #cdcdcd;
+    border-radius: 7px;
+    height: 400px;
+    width: 380px;
+    margin: 50px 50px;
+}
+
+.card-2{
+    position: relative;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px 45px 35px;
+    border: 10px solid white;
+    outline: 1px solid #cdcdcd;
+    border-radius: 7px;
+    height: 400px;
+    width: 380px;
+    margin: 50px 50px;
+}
+
+.card-3{
+    position: relative;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px 45px 35px;
+    border: 10px solid white;
+    outline: 1px solid #cdcdcd;
+    border-radius: 7px;
+    height: 400px;
+    width: 380px;
+    margin: 50px 50px;
+}
+
+.card-4{
+    position: relative;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px 45px 35px;
+    border: 10px solid white;
+    outline: 1px solid #cdcdcd;
+    border-radius: 7px;
+    height: 400px;
+    width: 380px;
+    margin: 50px 50px;
+}
+
+.service-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.service-content p{
+    color: #6a6a6a;
+}
+
+#service-row{
+    /* margin: 20px 100px; */
+}
+
+
